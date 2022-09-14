@@ -1,5 +1,6 @@
 let arr = [];
 let count;
+let result = 1;
 
 do {
     count = +prompt(`Enter value between 2 and 10 (including)`);
@@ -13,3 +14,8 @@ for (let i = 0; i < count; i++) {
     arr.push(randomValue);
 }
 console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+    result *= arr[i];
+}
+console.log(result);
